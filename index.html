@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoHero: Спаси озеро</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>EcoHero: Миссия «Спаси озеро»</h1>
+  <p>Нажми кнопку, чтобы установить ClayShield и спасти озеро!</p>
+  <button onclick="saveLake()">Установить ClayShield</button>
+  <p id="status">Статус: бездействие</p>
+
+  <script>
+    function saveLake() {
+      document.getElementById('status').textContent = "Статус: ClayShield установлен! Вода восстанавливается...";
+    }
+  </script>
+</body>
+</html>
